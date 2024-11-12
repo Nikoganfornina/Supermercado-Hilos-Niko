@@ -12,6 +12,7 @@ public class Costumer {
         FillCart();
 
     }
+
     public String getName() {
         return name;
     }
@@ -36,9 +37,9 @@ public class Costumer {
         RandomCart.add("Chicken Meat");
 
         Random random = new Random();
-        int numberOfProducts = random.nextInt(5) + 1;
 
-        for (int i = 0; i < numberOfProducts; i++) {
+
+        for (int i = 0; i < 5; i++) {
             // Select random Products
             int randomIndex = random.nextInt(RandomCart.size());
             String randomProduct = RandomCart.get(randomIndex);

@@ -6,5 +6,6 @@ public class Main {
         CheckOut checkOut = new CheckOut();
 
         checkOut.startProcessing();
+
     }
 }
