@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        Thread checkout = new Thread();
-        Thread checkout = new Thread();
+        Thread cart1 = new Thread();
+        Thread cart2 = new Thread();
 
 
         Costumer newCostumer1 = new Costumer("Ivan") ;
