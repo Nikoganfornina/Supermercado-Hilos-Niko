@@ -6,22 +6,22 @@ public class Costumer {
     ArrayList<String> cart;
 
 
-
     public Costumer(String name) {
         this.name = name;
         this.cart = new ArrayList<>();
         FillCart();
 
     }
-
-
-
+    public String getName() {
+        return name;
+    }
 
     public ArrayList<String> getCart() {
         return cart;
     }
 
-    public void FillCart(){
+
+    public void FillCart() {
 
         //This method create a cart with items random
 
@@ -46,12 +46,13 @@ public class Costumer {
         }
 
     }
-    public void ShowCart(){
+
+    public void ShowCart() {
         System.out.println("Name Client :" + name);
-        int Count = 0 ;
-        for(String products :  cart ) {
-            Count ++ ;
-            System.out.println("Product number " + Count +" : "+ products);
+        int Count = 0;
+        for (String products : cart) {
+            Count++;
+            System.out.println("Product number " + Count + " : " + products);
         }
     }
 
